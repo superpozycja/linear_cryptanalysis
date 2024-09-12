@@ -1,0 +1,7 @@
+			      linear cryptanalysis
+
+an implementation of a simple linear cryptanalysis attack on a substitution-
+permutation network. the exact network is as described in [1].
+
+[1] - Douglas Stinson. 2002. Cryptography: Theory and Practice, Second Edition 
+      (2nd. ed.). CRC/C&H.
