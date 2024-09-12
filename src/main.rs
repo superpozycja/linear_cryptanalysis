@@ -1,7 +1,8 @@
 use linear_cryptanalysis as la;
 
 fn main() {
-    println!("Hello, world!");
-    let ct = la::encrypt(b"ab", b"xy");
-    println!("ciphertext = {:#04x}{:02x}", ct[0], ct[1])
+    let pt = [0b0010_0110, 0b1011_0111];
+    let key = [0b0011_1010, 0b1001_0100, 0b1101_0110, 0b0011_1111];
+    let ct = la::encrypt(&pt,  &key);
+    la::print_block(&ct);
 }
